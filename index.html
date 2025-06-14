@@ -345,7 +345,7 @@
             // ePAWP formula: 2.4 + E/S × 2.76 + D × 0.106
             const ePAWP = 2.4 + (eWave / sVelocity) * 2.76 + dVelocity * 0.106;
             
-            document.getElementById('result').textContent = ePAWP.toFixed(1);
+            document.getElementById('result').textContent = Math.round(ePAWP);
             
             // Add visual feedback
             const resultElement = document.getElementById('result');
